@@ -77,7 +77,7 @@ const dalleApiCall = async (prompt, messages)=>{
         })
 
         let url = res?.data?.data[0]?.url;
-        // console.log('got image url: ',url);
+        console.log('got image url: ',url);
         messages.push({role: 'assistant', content: url});
         return Promise.resolve({success: true, data: messages});
 
