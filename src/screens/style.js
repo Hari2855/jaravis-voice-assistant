@@ -4,7 +4,7 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 const styles = StyleSheet.create({
     contiainer: {
         flex: 1,
-        backgroundColor: '#ffffff',
+        backgroundColor: 'black',
         // justifyContent: 'center'
     },
     txt1: {
@@ -51,7 +51,8 @@ const styles = StyleSheet.create({
     img2: {
         width: hp(15),
         height: hp(15),
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginTop: 10
     },
     contiainer2: {
         height: hp(60),
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
     txt4: {
         fontSize: wp(6.5),
         fontWeight: '500',
-        color: 'gray',
+        color: '#ffffff',
         marginLeft: 20
     },
     cont3: {
@@ -98,18 +99,22 @@ const styles = StyleSheet.create({
     },
     txt7: {
         fontSize: wp(5),
-        color: 'gray',
+        color: '#ffffff',
         fontWeight: 'bold',
         marginLeft: '7%'
     },
     contiainer3: {
         height: hp(60),
-        backgroundColor: '#e0dfe1',
         width: wp(90),
         alignSelf: 'center',
         borderRadius: 15,
-        padding: 5,
-        marginTop: hp(1)
+        marginTop: hp(1),
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 1,
+        borderColor: 'blue',
+        overflow: 'hidden',
+        // padding: 5
     },
     msgcont: {
         width: wp(60),
@@ -136,7 +141,16 @@ const styles = StyleSheet.create({
         width: hp(10),
         height: hp(10),
         borderRadius: hp(10),
-        marginTop: hp(10)
+    },
+    cover: {
+        width: hp(10),
+        height: hp(10),
+        borderRadius: hp(5),
+        overflow: 'hidden',
+        // backgroundColor: 'red',
+        marginTop: hp(10),
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     clrbtn: {
         backgroundColor: '#787779',
@@ -148,6 +162,42 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         top: hp(13)
+    },
+    inputc: {
+        width: '90%',
+        height: hp(6),
+        borderWidth: 0.8,
+        borderColor: '#474747',
+        alignItems: 'center',
+        flexDirection: 'row',
+        alignSelf: 'center',
+        marginTop: hp(3),
+        marginBottom: hp(5),
+        borderRadius: hp(2)
+    },
+    input: {
+        flex: 1,
+        paddingLeft: hp(3),
+        color: '#ffffff',
+        fontSize: hp(2.2)
+    },
+    btnc: {
+        height: hp(4),
+        width: hp(4),
+        backgroundColor: '#383838',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: hp(1),
+        borderRadius: hp(1)
+    },
+    se: {
+        height: hp(2.5),
+        width: hp(2.5),
+    },
+    back: {
+        width: '100%',
+        borderTopLeftRadius: 30,
+        height: '100%',
     }
 })
 
